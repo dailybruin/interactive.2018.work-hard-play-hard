@@ -1,0 +1,14 @@
+{% for item in photos %}
+<div class="slider-container">
+  <div class="ba-slider">
+    <img src="img/{{item.Photo2}}" alt="">
+    <div class="resize">
+      <img src="img/{{item.Photo1}}" alt="">
+    </div>
+    <span class="handle"></span>
+  </div>
+  <div class="caption">
+    {{item.Caption}}
+  </div>
+</div>
+{% endfor %}

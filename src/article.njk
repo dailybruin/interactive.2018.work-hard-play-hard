@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <base href="https://features.dailybruin.com/2018/spring-sing/">
+  <title>{{Name}} | Spring Sing 2018</title>
+  <meta name="description" content="{{ Headline }}">
+
+  <!-- Favicon -->
+
+
+  <!-- Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{Name}} | Spring Sing 2018">
+  <meta property="og:image" content="https://features.dailybruin.com/2018/spring-sing/img/{{Image}}">
+  <meta property="og:description" content="{{Headline}}">
+  <meta property="article:author" content="{{Byline}}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@dailybruin">
+  <meta name="twitter:creator" content="@individual_account">
+  <meta name="twitter:title" content="{{Name}} | Spring Sing 2018">
+  <meta name="twitter:description" content="{{Headline}}">
+  <meta name="twitter:image" content="https://features.dailybruin.com/2018/spring-sing/img/{{Image}}">
+
+
+  <!-- Web Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Federo|Poiret+One|Lora" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+  <div class="article-header">
+    <h1>{{Headline}}</h1>
+    <div class="article-byline">By {{Byline}}</div>
+    <div class="image-container">
+      <img src="img/{{Image}}"/>
+    </div>
+    <div class="first-line"><span class="text">{{Photocredit}}</span></div>
+  </div>
+  <div class="article-body">
+    <article>
+    {{Text | replace("\r\n \r\n", "<div style=\"height: 10px;\"></div>") | safe}}
+    </article>
+  </div>
+  <a href="" id="return-button">RETURN HOME</a>
+  {% include "./components/footer/footer.njk" %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28181852-23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-28181852-23');
+  </script>
+  <script src="js/article.js"></script>
+</body>
+</html>
